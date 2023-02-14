@@ -9,7 +9,7 @@ const PastOrder = (props) => {
 
   const [products,setProducts]=useState([])
   useEffect(() => {
-    fetch('/products').then((res)=>res.json()).then((product)=>{
+    fetch('https://laundarycart.onrender.com/products').then((res)=>res.json()).then((product)=>{
       setProducts(product)
     }).catch((err)=>{
       console.log(err)

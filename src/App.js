@@ -15,7 +15,7 @@ function App() {
   const ProductData= async ()=>{
 
     try {
-      const res= await fetch('/order',{
+      const res= await fetch('https://laundarycart.onrender.com/order',{
         method:"GET",
         headers:{
           Accept:"application/json",
