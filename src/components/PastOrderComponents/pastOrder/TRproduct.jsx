@@ -8,7 +8,7 @@ const TRproduct = ({product,key,user}) => {
     const closeOrder = () => setshowOrder(false);
     const [showOrder, setshowOrder] = useState(false)
     const [CanceDirect, setCanceDirect] = useState('cancel order')
-    const [CanceD, setCanceD] = useState('x')
+    const [CanceD, setCanceD] = useState('In progress')
     const Orderid= product._id
     const DateP=product.createdAt
 
@@ -20,6 +20,10 @@ const TRproduct = ({product,key,user}) => {
 
 
    function timeCal(){
+
+      setCanceDirect('Canceled')
+      setCanceD('Canceled')
+    
         let hrs=Timex.substr(0,2)
         let min= Timex.substr(3,2)
     let timeHrs=time.substr(0,2)
@@ -28,8 +32,7 @@ const TRproduct = ({product,key,user}) => {
         let intHrs= parseInt(hrs)
         let intMin=parseInt(min)
         
-        setCanceDirect('Canceled')
-        setCanceD(timeTim)
+       
 
     }
 

@@ -149,7 +149,7 @@ const Products = (props) => {
       };
   
       // console.log(gSenddata, "g send data");
-      const res = await fetch("https://laundarycart.onrender.com/createorder", {
+      const res = await fetch("https://laundrybackend-saurabhsrb23.onrender.com/createorder", {
         method: "POST",
         headers: {
           "content-type": "application/json",

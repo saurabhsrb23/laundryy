@@ -32,7 +32,7 @@ const RegistrationForm = (props) => {
 
     const postRegForm = async (e) => {
         e.preventDefault()
-        await axios.post('/register', regFormData)
+        await axios.post('https://laundrybackend-saurabhsrb23.onrender.com/register', regFormData)
             .then((res) => {
                 // console.log(res)
                 setRegisterSuccess(true)
