@@ -90,10 +90,10 @@ export default function SummaryPage({
           </thead>
           <tbody className="body-3">
             <tr className='err'>
-              <td className='xc'><select className='sl'><option>{user.District}</option>
+              <td className='xc'><select className='sl'> <option value="select">select</option><option>{user.District ? user.District :'Motihari'}</option>
                         </select></td>
-              <td  className="xc">{user.Address}</td>
-              <td className="xc">{user.Phone}</td>
+              <td  className="xc">{user.Address ?user.Address:'#222 ,10th road'}</td>
+              <td className="xc">{user.Phone? user.Phone:'6204058598'}</td>
             </tr>
           </tbody>
         </table>
