@@ -7,6 +7,7 @@ const TRproduct = ({product,key,user}) => {
 
     const closeOrder = () => setshowOrder(false);
     const [showOrder, setshowOrder] = useState(false)
+    const [showOrder1, setshowOrder1] = useState(0)
     const [CanceDirect, setCanceDirect] = useState('cancel order')
     const [CanceD, setCanceD] = useState('In progress')
     const Orderid= product._id
@@ -23,7 +24,8 @@ const TRproduct = ({product,key,user}) => {
    function timeCal(){
 
       setCanceDirect('Canceled')
-      setCanceD('Canceled')
+       setshowOrder1(1)
+           setCanceD('Canceled')
     
         let hrs=Timex.substr(0,2)
         let min= Timex.substr(3,2)
@@ -48,7 +50,7 @@ const TRproduct = ({product,key,user}) => {
               < td>{user.Phone ? user.Phone : '6204058598'}</ td>
               < td> {product.totalquantity}</ td>
               < td> {product.totalcost} </ td>
-              < td> {CanceD}</ td>
+              < td> {showOrder1==1?'Canceled':  CanceD}</ td>
               < td> <span id='cancelXbtn' onClick={timeCal}>{CanceDirect}</span>  </ td>
               < td>
                 <AiOutlineEye onClick={() =>{setshowOrder(true)}} />
