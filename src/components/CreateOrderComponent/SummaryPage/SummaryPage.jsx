@@ -92,7 +92,7 @@ export default function SummaryPage({
             <tr className='err'>
               <td className='xc'><select className='sl'> <option value="select">select</option><option>{user.District ? user.District :'Motihari'}</option>
                         </select></td>
-              <td  className="xc">{user.Address ?user.Address:'#222 ,10th road'}</td>
+              <td  className="xc">{user.Address ?user.Address:'Motihari'}</td>
               <td className="xc">{user.Phone? user.Phone:'6204058598'}</td>
             </tr>
           </tbody>
@@ -175,7 +175,7 @@ export default function SummaryPage({
                 <img className="tickimage" src={tickpic} alt="selected" />
               </div>
             </div>
-            <div>{user.Address+","+user.State+","+user.District}</div>
+            <div>Motihari ,Motihari</div>
           </div>
           <div className="Gprevsumaddress">
             <div>
