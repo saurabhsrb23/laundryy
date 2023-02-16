@@ -14,7 +14,9 @@
     padding-left: 55px;
   
   }
-  
+  .GbuttonforOrder{
+    width:70px
+  }
   .GContainerSucess{
     width: 250px;
     display: flex;
