@@ -25,10 +25,10 @@ const PastSummary = ({closeOrder}) => {
                         <tr>
 
                         <td> <div>strore Location</div> <div>
-                        jp
+                        Motihari
                             </div> </td>
-                        <td><div>strore Address:</div><div>mdksfkvnfkj</div> </td>
-                        <td><div>Phone</div><div>0987658909</div> </td>
+                        <td><div>strore Address:</div><div>Motihari</div> </td>
+                        <td><div>Phone</div><div>6204058598</div> </td>
                         </tr>
                     </tbody>
                 </table>
@@ -60,8 +60,8 @@ const PastSummary = ({closeOrder}) => {
                         <tr>
                             <td>Shirts</td>
                             <td>wasing</td>
-                            <td>5X20 =</td>
-                            <td>100</td>
+                            <td> 20X10 =</td>
+                            <td>200</td>
                         </tr>
                 
                     </thead>
@@ -70,7 +70,7 @@ const PastSummary = ({closeOrder}) => {
                             <td></td>
                             <td></td>
                             <td>sub total</td>
-                            <td>90</td>
+                            <td>200</td>
                             </tr>
                         <tr>
                             <td></td>
@@ -84,7 +84,7 @@ const PastSummary = ({closeOrder}) => {
                             <td></td>
                             <td></td>
                             <td>Total:</td>
-                            <td>560</td>
+                            <td>290</td>
                             </tr>
                     </tfoot>
                 </table>
@@ -98,7 +98,7 @@ const PastSummary = ({closeOrder}) => {
             <article className='addressContainer'>
                 <h3>Home</h3>
                 <p>#222 ,10th road</p>
-                <p>Bangalore</p>
+                <p>Motihari</p>
             </article>
             </section>
 

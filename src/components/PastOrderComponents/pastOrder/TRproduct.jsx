@@ -11,6 +11,7 @@ const TRproduct = ({product,key,user}) => {
     const [CanceD, setCanceD] = useState('In progress')
     const Orderid= product._id
     const DateP=product.createdAt
+    const t =product.orderdate
 
     let dateTime= new Date();
     let time = dateTime.toLocaleTimeString();
@@ -41,10 +42,10 @@ const TRproduct = ({product,key,user}) => {
   return (
               <tr className='pastOrdercontainerBody'>
               <td> {Orderid.substr(5,6) }</ td>
-              < td> {DateP.substr(0,10)+" & "+DateP.substr(11,5)}</ td>
+              < td> {DateP.substr(0,10)+" & "+t}</ td>
               < td> Gp nagar</ td>
               < td> {product.storelocation}</ td>
-              < td>{user.Phone}</ td>
+              < td>{user.Phone ? user.Phone : '6204058598'}</ td>
               < td> {product.totalquantity}</ td>
               < td> {product.totalcost} </ td>
               < td> {CanceD}</ td>

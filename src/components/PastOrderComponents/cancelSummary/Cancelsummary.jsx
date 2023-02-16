@@ -7,12 +7,12 @@ const Cancelsummary = () => {
     <div className=''>
    {
     swal({
-      title: "Good job!",
-      text: "You clicked the button!",
+      title: "order summary!",
+      text: "Your order already is canceled!",
       icon: "success",
       button: "Procced",
     }).then(function() {
-      window.location = "/pastorder";
+      window.location = "/createOrder";
   })
    }
     </div>
